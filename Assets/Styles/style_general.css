@@ -1,8 +1,8 @@
 html, body{
-    --bg-color: #222831;
-    --text-color-focus: #EEEEEE;
-    --text-color: #FFD369;
-    --focus-color: #FFD369;
+    --bg-color: #251B37;
+    --text-color-focus: #FFCACA;
+    --text-color: #FFECEF;
+    --focus-color: #372948;
     --font-family-sans: 'DM Sans';
     --font-family-serif: 'DM Serif Text';
     --font-family-display: 'DM Serif Display';
@@ -93,5 +93,5 @@ h2 {
 }
 
 #section_projects {
-    
+    padding: 5vmin;
 }
