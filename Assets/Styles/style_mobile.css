@@ -1,0 +1,8 @@
+#container_profile {
+    flex-direction: column;
+}
+
+#texts_profile {
+    margin-top: 6vmin;
+    align-items: center;
+}

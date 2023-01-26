@@ -1,0 +1,15 @@
+#container_profile {
+    flex-direction: row;
+}
+
+#profile_picture {
+    width: 40vmin;
+    height: 40vmin;
+    margin-right: 3vmin;
+    margin-bottom: 1.5vmin;
+}
+
+#texts_profile {
+    margin-left: 7vmin;
+    align-items: left;
+}
