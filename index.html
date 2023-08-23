@@ -22,7 +22,7 @@
         <div id="viewport">
             <div class="page" id="page_home">
                 <div id="logo_menu">
-                    <div class="logo_text_firstname">ALAN</div>
+                    <div class="logo_text_firstname">Alan</div>
                     <div class="logo_text_lastname">SALAÜN</div>
                 </div>
                 <div class="btn_next_page" onclick="goToDiv('page_menu')"><img src="Assets/Icons/arrow-down.png"></div>
@@ -32,10 +32,22 @@
                 <div class="logo_page"></div>
                 <div class="btn_previous_page" onclick="goToDiv('page_home')"><img src="Assets/Icons/arrow-up.png"></div>
                 <div id="menu_pages">
-                    <div class="link_page" id="link_projects"></div>
-                    <div class="link_page" id="link_experiences"></div>
-                    <div class="link_page" id="link_skills"></div>
-                    <div class="link_page" id="link_contact"></div>
+                    <div class="link_page" id="link_projects" onclick="goToDiv('page_projects')">
+                        <div class="btn_link_page"><img src="Assets/Icons/joystick.png"></div>
+                        PROJECTS
+                    </div>
+                    <div class="link_page" id="link_experiences" onclick="goToDiv('page_experiences')">
+                        <div class="btn_link_page"><img src="Assets/Icons/school.png"></div>
+                        EXPERIENCES
+                    </div>
+                    <div class="link_page" id="link_skills" onclick="goToDiv('page_skills')">
+                        <div class="btn_link_page"><img src="Assets/Icons/star.png"></div>
+                        SKILLS
+                    </div>
+                    <div class="link_page" id="link_contact" onclick="goToDiv('page_contact')">
+                        <div class="btn_link_page"><img src="Assets/Icons/contact.png"></div>
+                        CONTACT
+                    </div>
                 </div>
                 <div class="btn_next_page" onclick="goToDiv('page_projects')"><img src="Assets/Icons/joystick.png"></div>
             </div>
@@ -44,7 +56,11 @@
                 <div class="btn_previous_page" onclick="goToDiv('page_menu')"><img src="Assets/Icons/menu.png"></div>
 
                 <div class="page_title"><hr/><div>Projects</div><hr/></div>
-
+                    <div class="horizontal_scroll">
+                        <div id="projects_list">
+                            <!-- Filled by code-->
+                        </div>
+                    </div>
                 <div class="btn_next_page" onclick="goToDiv('page_experiences')"><img src="Assets/Icons/school.png"></div>
             </div>
             <div class="page" id="page_experiences">
