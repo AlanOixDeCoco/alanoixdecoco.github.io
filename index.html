@@ -55,11 +55,13 @@
                 <div class="logo_page"></div>
                 <div class="btn_previous_page" onclick="goToDiv('page_menu')"><img src="Assets/Icons/menu.png"></div>
 
-                <div class="page_title"><hr/><div>Projects</div><hr/></div>
-                    <div class="horizontal_scroll">
+                <div class="page_title" id="projects_page_title"><hr/><div>Projects</div><hr/></div>
+                    <div class="horizontal_scroller" id="projects_scroller">
+                        <div class="scroll_button" onclick="scrollToLeft('projects_list')"><img src="Assets/Icons/arrow-left.png"></div>
                         <div id="projects_list">
                             <!-- Filled by code-->
                         </div>
+                        <div class="scroll_button" onclick="scrollToRight('projects_list')"><img src="Assets/Icons/arrow-right.png"></div>
                     </div>
                 <div class="btn_next_page" onclick="goToDiv('page_experiences')"><img src="Assets/Icons/school.png"></div>
             </div>
