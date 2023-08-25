@@ -122,6 +122,18 @@ function scrollToLeft(div){
     document.getElementById(div).scrollLeft -= getVMin() * 31;
 }
 
+function getProjectYearQuantity(year){
+    let quantity = 0;
+    projects.forEach(project => {
+        if(project.year == year) quantity++;
+    });
+    return quantity;
+}
+
+function openProject(projectIndex){
+    
+}
+
 // Program
 projects.forEach(project => {
     if(!document.getElementById(`projects_year_list_${project.year}`)){
@@ -132,14 +144,14 @@ projects.forEach(project => {
                     <!-- Filled with projects -->
                 </div>
                 <div class="projects_year_indicator">
-                    <p>${project.year}</p>
+                    <p>${project.year} (${getProjectYearQuantity(project.year)})</p>
                     <hr/>
                 </div>
             </div>
         `;
     }
     document.getElementById(`projects_year_list_${project.year}`).innerHTML += `
-            <div class="btn_project" id="btn_${project.name}">
+            <div class="btn_project" id="btn_${project.name}" onclick="openProject(${projects.findIndex((element) => {return element.name == project.name;})})">
                 <div class="btn_project_name">${project.name}</div>
             </div>
         `;
