@@ -4,9 +4,9 @@ const projects = [
         name: `18 Seconds`,
         year: 2021,
         description: ``,
-        icon: `url("Assets/Images/Games/18seconds/icon.png")`,
+        icon: `url("Assets/Images/Games/18Seconds/icon.png")`,
         screenshots: [
-            `url("Assets/Images/Games/18seconds/screenshot_00.png")`,
+            `url("Assets/Images/Games/18Seconds/screenshot_00.png")`,
             //...
         ]
         //...
@@ -78,7 +78,7 @@ const projects = [
         name: `BOB`,
         year: 2023,
         description: ``,
-        icon: `url("Assets/Images/Games/Bob/icon.png")`,
+        icon: `url("Assets/Images/Games/BOB/icon.png")`,
         screenshots: [
             //...
         ]
