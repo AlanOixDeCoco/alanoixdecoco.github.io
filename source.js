@@ -157,3 +157,9 @@ projects.forEach(project => {
         `;
         document.getElementById(`btn_${project.name}`).style.backgroundImage = project.icon;
 });
+
+// Add event on left/right arrow keys press
+document.addEventListener('keydown', (event) => {
+    if(event.key == "ArrowLeft") { scrollToLeft("projects_list"); }
+    if(event.key == "ArrowRight") { scrollToRight("projects_list"); }
+  }, false);

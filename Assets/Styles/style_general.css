@@ -80,12 +80,20 @@ p {
     font-weight: 100;
 }
 
+
+#page_home p {
+    position: absolute;
+    bottom: 4vmin;
+    font-size: 2vmin;
+    opacity: .6;
+}
+
 .btn_next_page {
+    display: none;
     fill-opacity: 0;
     cursor: pointer;
     position: absolute;
     bottom: 2vw;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 6vmin;
@@ -107,11 +115,11 @@ p {
 }
 
 .btn_previous_page {
+    display: none;
     fill-opacity: 0;
     cursor: pointer;
     position: absolute;
     top: 2vw;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 6vmin;
@@ -277,37 +285,50 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4vmin;
+    gap: 3vmin;
+}
+
+@keyframes select_scroll_button {
+    from { height: 8vmin;}
+    to { height: 28vmin;}
+}
+@keyframes deselect_scroll_button {
+    from {height: 28vmin;}
+    to {height: 8vmin;}
 }
 
 .scroll_button {
-    width: 6vmin;
-    height: 6vmin;
-    margin-bottom: 5vmin;
+    background: #FFFFFF;
+    width: 8vmin;
+    height: 8vmin;
+    margin-bottom: 5.4vmin;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .4vmin solid #FFFFFF;
-    border-radius: 100%;
+    animation: .1s deselect_scroll_button linear forwards;
 }
 .scroll_button img {
-    width: 80%;
+    width: 7vmin;
+    height: 7vmin;
+    filter: brightness(0);
 }
 .scroll_button:hover {
-    fill-opacity: 1;
-    background-color: #FFFFFF;
+    animation: .1s select_scroll_button linear forwards;
 }
-.scroll_button img {
-    width: 90%;
-    height: 90%;
-    filter: brightness(100);
-}
-.scroll_button:hover img {
-    filter: brightness(0);
+.scroll_button::selection {
+    animation: .1s select_scroll_button linear forwards;
 }
 
 /* Ratio changes */
 @media (max-aspect-ratio: 1/1) {
+    #viewport {
+        scroll-snap-type: y proximity;
+    }
+
+    #page_home p {
+        display: none;
+    }
+
     #menu_pages {
         flex-wrap: wrap;
         align-content: space-between;
@@ -340,11 +361,13 @@ p {
         width: 5vmax;
         height: 5vmax;
         margin-top: 1.5vmax;
+        border: none;
     }
     .btn_next_page {
         width: 5vmax;
         height: 5vmax;
         margin-bottom: 1.5vmax;
+        border: none;
     }
 
     #projects_page_title {
