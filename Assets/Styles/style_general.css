@@ -143,7 +143,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     font-weight: 400;
 }
 .link_page:hover {
@@ -154,12 +154,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12vw;
-    height: 12vw;
-    margin: 1vw 2vw;
+    width: 15vmin;
+    height: 15vmin;
+    margin: 1vmin 3.5vmin;
     fill-opacity: 0;
     border-radius: 100%;
-    border: .35vw solid #FFFFFF;
+    border: .7vmin solid #FFFFFF;
 }
 .link_page:hover .btn_link_page {
     fill-opacity: 1;
@@ -308,6 +308,27 @@ p {
 
 /* Ratio changes */
 @media (max-aspect-ratio: 1/1) {
+    #menu_pages {
+        flex-wrap: wrap;
+        align-content: space-between;
+        column-gap: 8vmin;
+        row-gap: 5vmin;
+        width: 60vmin;
+    }
+    .btn_link_page {
+        width: 20vmin;
+        height: 20vmin;
+        max-width: 16vmax;
+        max-height: 16vmax;
+        border-width: .9vmin;
+        margin-bottom: 2vmin;
+    }
+    .link_page {
+        max-width: 20vmax;
+        width: 25vmin;
+        font-size: 4vmin;
+    }
+
     .page_title {
         font-size: 3.5vmax;
     }
