@@ -103,6 +103,8 @@ const projects = [
     },
 ];
 
+projects.reverse();
+
 // Functions
 function getVMin(){
     return (window.innerWidth <= window.innerHeight ? window.innerWidth : window.innerHeight) / 100;
