@@ -68,7 +68,10 @@ const projects = [
     {
         name: `(Un)breakable`,
         year: 2023,
-        description: ``,
+        description: 
+        `
+        (Un)Breakable 
+        `,
         icon: `url("Assets/Images/Games/UnBreakable/icon.png")`,
         screenshots: [
             //...
@@ -77,8 +80,14 @@ const projects = [
     {
         name: `BOB`,
         year: 2023,
-        description: `Ce projet a été réalisé dans le cadre des cours de Level Design, Direction Artistique, Infographie 2D et Programmation  à l’ETPA de Rennes, du 8 mars au 10 avril 2023.
-        Le sujet portait sur la création d’un Zelda Like, un jeu d’action-aventure en 2D, vu de dessus. Ce document expliquera en détail les recherches et différentes étapes de création pour aboutir à un résultat, ainsi que les différentes adaptations et remises en question face aux contraintes identifiées au cours du développement.`,
+        description: 
+        `
+        BOB is a 2D top-down Zelda-Like, with shooting ability.
+        <br>
+        To complete the level you must defeat the enemies and unlock new items, while keeping an eye on your health.
+        <br><br>
+        This game was made during my first year at the ETPA school, it was programmed in Javascript using the Phaser 3 game framework.
+        `,
         icon: `url("Assets/Images/Games/BOB/icon.png")`,
         screenshots: [
             //...
@@ -87,18 +96,35 @@ const projects = [
     {
         name: `Hero Defense`,
         year: 2023,
-        description: ``,
+        description: 
+        `
+        Hero Defense is a 3D (mini) dungeon crawler mixed with a 2D tower defense.
+        <br>
+        Your goal is to keep your computer alive while viruses are getting their way to its folders.
+        Defeat enemies and clear floors in the 3D world to get rewards and place towers in the 2D space!
+        <br><br>
+        The game has been created in 35 hours during the ETPA Game Jam, a private gamejam hosted by the ETPA school.
+        <br>
+        I was responsible of the project management and programmation/integration in Unity.
+        `,
         icon: `url("Assets/Images/Games/HeroDefense/icon.png")`,
         screenshots: [
-            //...
+            "Assets/Images/Games/HeroDefense/screenshot_00.png",
+            "Assets/Images/Games/HeroDefense/screenshot_01.png",
+            "Assets/Images/Games/HeroDefense/screenshot_02.png",
+            "Assets/Images/Games/HeroDefense/screenshot_03.png",
         ]
     },
     {
         name: `Night Knight`,
         year: 2023,
         description: `
-        Night Knight est un jeu de plateforme et de donjon en 2D (sans fin) se déroulant dans un donjon hanté par des âmes maléfiques. Le joueur doit libérer autant d'âmes que possible avant que le soleil ne se lève, marquant la fin de la partie.
-        Parcourez des pièces pleines de pièges et battez les ennemis, mais gardez un œil sur le temps qui passe lentement, car si le temps est écoulé, il est trop tard, réessayez !`,
+        Night Knight is a 2D (endless) dungeon crawler platformer taking place in an ancient dungeon haunted by evil souls.
+        <br>
+        The player must free as many souls as possible before the sun comes up, marking the end of the run. Walk through rooms full of traps and defeat the evil-driven enemies but keep an eye on the sun slowly rising up, because if it comes up, it’s too late, Try again!
+        <br><br>
+        This game was my last project in my first year at the ETPA school, it was programmed in Javascript using the Phaser 3 game framework and a homemade component system inspired by Unity.
+        `,
         icon: `url("Assets/Images/Games/NightKnight/icon.png")`,
         screenshots: [
             "Assets/Images/Games/NightKnight/screenshot_00.png",
@@ -165,7 +191,7 @@ function openProject(projectIndex){
     `
         <div id="viewport_background" onclick="closeProject()"></div>
         <div id="popup_project">
-            <div id="project_title">${projects[projectIndex].name}</div>
+            <div id="project_title">${projects[projectIndex].name.toUpperCase()}</div>
             <div id="project_preview_slider">
                 <div id="project_preview_list">
                     <!--<iframe id="project_embed" class="project_preview_element" allowfullscreen="true" frameborder="0" src="https://itch.io/embed-upload/3523884?color=000000"></iframe>-->                
