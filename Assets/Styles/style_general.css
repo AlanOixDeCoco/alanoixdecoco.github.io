@@ -258,9 +258,12 @@ p {
     background-size: cover;
     cursor: pointer;
     animation: .2s deselect_project ease-out forwards;
+    border-radius: 1vmin;
+    overflow: hidden;
 }
 .btn_project:hover {
     animation: .2s select_project ease-in forwards;
+    border-radius: 1vmin;
 }
 
 @keyframes select_project_name {
@@ -273,7 +276,7 @@ p {
 }
 .btn_project_name {
     width: 100%;
-    padding: .2vmin .7vmin;
+    padding: .6vmin 1vmin;
     overflow: hidden;
     background: #FFFFFF;
     color: #000000;
@@ -310,6 +313,7 @@ p {
     align-items: center;
     justify-content: center;
     animation: .1s deselect_scroll_button linear forwards;
+    border-radius: 1vmin;
 }
 .scroll_button img {
     width: 7vmin;
