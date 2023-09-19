@@ -105,7 +105,7 @@ const projects = [
         <br><br>
         The game has been created in 35 hours during the ETPA Game Jam, a private gamejam hosted by the ETPA school.
         <br>
-        I was responsible of the project management and programmation/integration in Unity.
+        I was responsible for the project management and programmation/integration in Unity.
         `,
         icon: `url("Assets/Images/Games/HeroDefense/icon.png")`,
         screenshots: [
