@@ -8,8 +8,8 @@ const projects = [
         screenshots: [
             "Assets/Images/Games/18Seconds/screenshot_00.png",
             //...
-        ]
-        //...
+        ],
+        link: "https://itch.io/embed/963942?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Escape It!`,
@@ -18,7 +18,8 @@ const projects = [
         icon: `url("Assets/Images/Games/EscapeIt/icon.png")`,
         screenshots: [
             //...
-        ]
+        ],
+        link: "https://itch.io/embed/1070313?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Workbook`,
@@ -27,7 +28,8 @@ const projects = [
         icon: `url("Assets/Images/Games/Workbook/icon.png")`,
         screenshots: [
             //...
-        ]
+        ],
+        link: "https://itch.io/embed/1364973?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `The Glorious Pasteur`,
@@ -36,7 +38,8 @@ const projects = [
         icon: `url("Assets/Images/Games/TheGloriousPasteur/icon.png")`,
         screenshots: [
             //...
-        ]
+        ],
+        link: "https://itch.io/embed/1854622?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Windshield Warfare`,
@@ -45,7 +48,8 @@ const projects = [
         icon: `url("Assets/Images/Games/WindshieldWarfare/icon.png")`,
         screenshots: [
             //...
-        ]
+        ],
+        link: "https://itch.io/embed/1531777?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `RPG Battle`,
@@ -53,8 +57,12 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/RpgBattle/icon.png")`,
         screenshots: [
-            //...
-        ]
+            "Assets/Images/Games/RpgBattle/screenshot_00.png",
+            "Assets/Images/Games/RpgBattle/screenshot_01.png",
+            "Assets/Images/Games/RpgBattle/screenshot_02.png",
+            "Assets/Images/Games/RpgBattle/screenshot_03.png",
+        ],
+        link: "https://itch.io/embed/1959323?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Sidescroller`,
@@ -62,20 +70,27 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/Sidescroller/icon.png")`,
         screenshots: [
-            //...
-        ]
+            "Assets/Images/Games/Sidescroller/screenshot_00.png",
+            "Assets/Images/Games/Sidescroller/screenshot_01.png",
+            "Assets/Images/Games/Sidescroller/screenshot_02.png",
+        ],
+        link: "https://itch.io/embed/2232796?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `(Un)breakable`,
         year: 2023,
         description: 
         `
-        (Un)Breakable 
+        
         `,
         icon: `url("Assets/Images/Games/UnBreakable/icon.png")`,
         screenshots: [
-            //...
-        ]
+            "Assets/Images/Games/UnBreakable/screenshot_00.png",
+            "Assets/Images/Games/UnBreakable/screenshot_01.png",
+            "Assets/Images/Games/UnBreakable/screenshot_02.png",
+            "Assets/Images/Games/UnBreakable/screenshot_03.png",
+        ],
+        link: "https://itch.io/embed/1928219?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `BOB`,
@@ -90,8 +105,14 @@ const projects = [
         `,
         icon: `url("Assets/Images/Games/BOB/icon.png")`,
         screenshots: [
-            //...
-        ]
+            "Assets/Images/Games/BOB/screenshot_00.png",
+            "Assets/Images/Games/BOB/screenshot_01.png",
+            "Assets/Images/Games/BOB/screenshot_02.png",
+            "Assets/Images/Games/BOB/screenshot_03.png",
+            "Assets/Images/Games/BOB/screenshot_04.png",
+            "Assets/Images/Games/BOB/screenshot_05.png",
+        ],
+        link: "https://itch.io/embed/1981417?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Hero Defense`,
@@ -113,7 +134,8 @@ const projects = [
             "Assets/Images/Games/HeroDefense/screenshot_01.png",
             "Assets/Images/Games/HeroDefense/screenshot_02.png",
             "Assets/Images/Games/HeroDefense/screenshot_03.png",
-        ]
+        ],
+        link: "https://itch.io/embed/2068856?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
     {
         name: `Night Knight`,
@@ -132,7 +154,8 @@ const projects = [
             "Assets/Images/Games/NightKnight/screenshot_02.png",
             "Assets/Images/Games/NightKnight/screenshot_03.png",
             "Assets/Images/Games/NightKnight/screenshot_04.png",
-        ]
+        ],
+        link: "https://itch.io/embed/2232758?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
 ];
 
@@ -193,8 +216,7 @@ function openProject(projectIndex){
         <div id="popup_project">
             <div id="project_title">${projects[projectIndex].name.toUpperCase()}</div>
             <div id="project_preview_slider">
-                <div id="project_preview_list">
-                    <!--<iframe id="project_embed" class="project_preview_element" allowfullscreen="true" frameborder="0" src="https://itch.io/embed-upload/3523884?color=000000"></iframe>-->                
+                <div id="project_preview_list">           
                     ${screenshots}
                 </div>
                 <div id="project_preview_slider_navigation">
@@ -205,6 +227,7 @@ function openProject(projectIndex){
             <div id="project_informations">
                 <div id="project_description">${projects[projectIndex].description}</div>
                 <div id="project_technologies"></div>
+                <iframe frameborder="0" src="${projects[projectIndex].link}" width="100%" height="165"></iframe>
             </div>
         </div>
     `
