@@ -7,7 +7,10 @@ const projects = [
         icon: `url("Assets/Images/Games/18Seconds/icon.png")`,
         screenshots: [
             "Assets/Images/Games/18Seconds/screenshot_00.png",
-            //...
+            "Assets/Images/Games/18Seconds/screenshot_01.png",
+            "Assets/Images/Games/18Seconds/screenshot_02.png",
+            "Assets/Images/Games/18Seconds/screenshot_03.png",
+            "Assets/Images/Games/18Seconds/screenshot_04.png",
         ],
         link: "https://itch.io/embed/963942?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
@@ -17,7 +20,10 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/EscapeIt/icon.png")`,
         screenshots: [
-            //...
+            "Assets/Images/Games/EscapeIt/screenshot_00.png",
+            "Assets/Images/Games/EscapeIt/screenshot_01.png",
+            "Assets/Images/Games/EscapeIt/screenshot_02.png",
+            "Assets/Images/Games/EscapeIt/screenshot_03.png",
         ],
         link: "https://itch.io/embed/1070313?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
@@ -27,7 +33,9 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/Workbook/icon.png")`,
         screenshots: [
-            //...
+            "Assets/Images/Games/Workbook/screenshot_00.png",
+            "Assets/Images/Games/Workbook/screenshot_01.png",
+            "Assets/Images/Games/Workbook/screenshot_02.png",
         ],
         link: "https://itch.io/embed/1364973?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
@@ -37,7 +45,12 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/TheGloriousPasteur/icon.png")`,
         screenshots: [
-            //...
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_00.png",
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_01.png",
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_02.png",
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_03.png",
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_04.png",
+            "Assets/Images/Games/TheGloriousPasteur/screenshot_05.png",
         ],
         link: "https://itch.io/embed/1854622?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
@@ -47,7 +60,9 @@ const projects = [
         description: ``,
         icon: `url("Assets/Images/Games/WindshieldWarfare/icon.png")`,
         screenshots: [
-            //...
+            "Assets/Images/Games/WindshieldWarfare/screenshot_00.png",
+            "Assets/Images/Games/WindshieldWarfare/screenshot_01.png",
+            "Assets/Images/Games/WindshieldWarfare/screenshot_02.png",
         ],
         link: "https://itch.io/embed/1531777?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },

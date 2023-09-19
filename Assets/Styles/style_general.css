@@ -481,7 +481,7 @@ p {
     background: #000000;
     width: 90vmin;
     height: fit-content;
-    max-height: 90vh;
+    max-height: 90vmin;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
