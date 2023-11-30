@@ -172,6 +172,26 @@ const projects = [
         ],
         link: "https://itch.io/embed/2232758?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
+    {
+        name: `Survival Shooter`,
+        year: 2023,
+        description: `
+        Try to survive as many waves as possible before the enemies destroy the objective, ... or you!
+        <br><br>
+        This game was made for a solo project in my programming class at ESMA.
+        <br>
+        I used Kay Lousberg's Prototype Bits assets pack for the 3D visuals.
+        <br><br>
+        Made with love using Unity.
+        `,
+        icon: `url("Assets/Images/Games/SurvivalShooter/icon.png")`,
+        screenshots: [
+            "Assets/Images/Games/SurvivalShooter/screenshot_00.png",
+            "Assets/Images/Games/SurvivalShooter/screenshot_01.png",
+            "Assets/Images/Games/SurvivalShooter/screenshot_02.png",
+        ],
+        link: "https://itch.io/embed/2396347?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
+    }
 ];
 
 var busy = false;
