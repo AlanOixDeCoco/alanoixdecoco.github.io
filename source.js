@@ -191,7 +191,25 @@ const projects = [
             "Assets/Images/Games/SurvivalShooter/screenshot_02.png",
         ],
         link: "https://itch.io/embed/2396347?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
-    }
+    },
+    {
+        name: `Boxed`,
+        year: 2024,
+        description: `
+        You just woke up in a storage box, you don't really know what to do, but the timer on the top is a hint that you must escape very soon...
+        <br><br>
+        This game was made by five people, and I took part in it as the programmer.
+        <br><br>
+        Made with love using Unity.
+        `,
+        icon: `url("Assets/Images/Games/Boxed/icon.png")`,
+        screenshots: [
+            "Assets/Images/Games/Boxed/screenshot_00.png",
+            "Assets/Images/Games/Boxed/screenshot_01.png",
+            "Assets/Images/Games/Boxed/screenshot_02.png",
+        ],
+        link: "https://itch.io/embed/2649413?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
+    },
 ];
 
 var busy = false;
