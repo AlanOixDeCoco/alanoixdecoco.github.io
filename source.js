@@ -206,7 +206,6 @@ const projects = [
         screenshots: [
             "Assets/Images/Games/Boxed/screenshot_00.png",
             "Assets/Images/Games/Boxed/screenshot_01.png",
-            "Assets/Images/Games/Boxed/screenshot_02.png",
         ],
         link: "https://itch.io/embed/2649413?border_width=0&amp;bg_color=ffffff&amp;link_color=e53b44&amp;border_color=ffffff"
     },
